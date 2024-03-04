@@ -1,1 +1,10 @@
-# Master-Mind
+Mastermind is a coding-breaking board game for two players. The “secret code” is a set of 4 colors chosen out of a possible 6 colors, where the player needs to guess which colors are in which positions in the 4-color secret code. After each guess, the player learns how many colors in their guess are in the right position, and how many had a color that’s in the code but the color is in the wrong position. Scoring pegs of different colors were used to show them how many correct guesses and how many correct positions they had gotten with their guess. Red pegs meant a correct color but out of position, black pegs meant a correct color in the correct position. These scoring pegs after each guess can be placed in any order – the player never knows _which_ colors are correct and/or in the correct position.
+
+In an older version of Mastermind, called, Bulls and Cows, guesses with correct position were called “bulls”, and correct guesses with incorrect positions were called “cows”. This version of the game will use the “bull” and “cow” terminology when talking about correct guesses for Mastermind.
+
+This design of the game is for one player. In this version, the program selects the 4 color secret code. This program will also place the scoring pegs. In some versions of Mastermind, blank positions are allowed, and/or duplicate colors are allowed. This version will not allow blank positions or duplicate colors. Permitted colors in this design include:
+colors = ["red", "blue", "green", "yellow", "purple", "black"].
+
+In this one-player game, the score is the number of guesses it takes the player to guess the code. The player loses if they don’t guess the code in 10 tries. Lower scores/fewer guesses are better. The scoring pegs in this design will be red for cows and black for bulls.
+
+All user interaction is via the turtle-based user interface (Python3); users must use the mouse to play this game (the only keyboard actions are when the player's name is captured at the beginning of the game). 
